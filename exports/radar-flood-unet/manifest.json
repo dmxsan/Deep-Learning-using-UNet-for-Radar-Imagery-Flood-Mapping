@@ -1,0 +1,47 @@
+{
+  "plate": "radar-flood-unet",
+  "modelFile": "Notebook/unet_flood.h5",
+  "threshold": 0.5,
+  "normRange": [
+    -70,
+    70
+  ],
+  "samples": [
+    {
+      "id": "chip-01",
+      "label": "Chip 01 \u00b7 Main River Channel",
+      "coords": "2.38\u00b0 S, 115.07\u00b0 E",
+      "sourceFile": "2_s21_training (4x4 mosaic @ r11c13)",
+      "floodCoveragePct": 34.1,
+      "gtCoveragePct": 36.8,
+      "iou": 0.74,
+      "sar": "/atlas/radar-flood-unet/chip-01-sar.png",
+      "pred": "/atlas/radar-flood-unet/chip-01-pred.png",
+      "gt": "/atlas/radar-flood-unet/chip-01-gt.png"
+    },
+    {
+      "id": "chip-02",
+      "label": "Chip 02 \u00b7 Broad Floodplain",
+      "coords": "2.85\u00b0 S, 115.15\u00b0 E",
+      "sourceFile": "2_s21_training (4x4 mosaic @ r40c18)",
+      "floodCoveragePct": 50.1,
+      "gtCoveragePct": 51.9,
+      "iou": 0.83,
+      "sar": "/atlas/radar-flood-unet/chip-02-sar.png",
+      "pred": "/atlas/radar-flood-unet/chip-02-pred.png",
+      "gt": "/atlas/radar-flood-unet/chip-02-gt.png"
+    },
+    {
+      "id": "chip-03",
+      "label": "Chip 03 \u00b7 Meandering Channel & Floodplain",
+      "coords": "2.40\u00b0 S, 115.07\u00b0 E",
+      "sourceFile": "2_s22_training (4x4 mosaic @ r12c13)",
+      "floodCoveragePct": 37.7,
+      "gtCoveragePct": 40.5,
+      "iou": 0.77,
+      "sar": "/atlas/radar-flood-unet/chip-03-sar.png",
+      "pred": "/atlas/radar-flood-unet/chip-03-pred.png",
+      "gt": "/atlas/radar-flood-unet/chip-03-gt.png"
+    }
+  ]
+}

@@ -19,3 +19,10 @@ Images structure: <br>
 <img src="https://user-images.githubusercontent.com/35564104/138245023-9b077f23-a9e1-4396-b701-450d43b0c09c.png" width="1000"> <br>
 #### U-Net Prediction <br>
 <img src="https://user-images.githubusercontent.com/35564104/138245042-029a7757-1fcc-4c2a-90dc-088e8dfc7407.png" width="1000">
+
+## Portfolio Export (`ChipInspector`)
+[scripts/export_atlas_chips.py](scripts/export_atlas_chips.py) exports web-ready Sentinel-1 SAR, ground-truth, and U-Net prediction PNGs plus `manifest.json` into `exports/radar-flood-unet/` using `Notebook/unet_flood.h5` (`threshold=0.5`, `normRange=[-70, 70]`).
+
+- `--mosaic --mosaic-grid 4` stitches contiguous `4×4` (`512×512` px) areas and runs overlapping `stride=32` cosine-blended inference to eliminate `128×128` tile-boundary seams.
+- Raw Kaggle TIFFs, archives, `.venv/`, and local `exports/_previews/` strips are excluded via `.gitignore`.
+
